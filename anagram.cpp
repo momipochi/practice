@@ -9,13 +9,12 @@ using namespace std;
 
 vector<vector<string>> groupAnagrams(vector<string> &strs)
 {
-    vector<string> tmp = strs;
     vector<vector<string>> res;
     unordered_map < string, size_t > check;
     size_t index = 0;
-    for (size_t i = 0; i < tmp.size(); i++)
+    for (size_t i = 0; i < strs.size(); i++)
     {
-        string str = tmp[i];
+        string str = strs[i];
         sort(str.begin(), str.end());
         if(check.find(str) == check.end()){
             check.emplace(str,index);
