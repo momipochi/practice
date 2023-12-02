@@ -23,8 +23,7 @@ vector<vector<string>> groupAnagrams(vector<string> &strs)
             res[index].push_back(strs[i]);
             index++;
         }else{
-            res[check[str]].push_back(strs[i]);
-            
+            res[check[str]].push_back(strs[i]);   
         }
     }
 
