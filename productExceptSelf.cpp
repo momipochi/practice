@@ -7,6 +7,8 @@ using namespace std;
 // https://leetcode.com/problems/product-of-array-except-self/description/
 vector<int> productExceptSelf(vector<int> &nums)
 {
+    //solution copied, brute force, dynamic tabulation, dynamic space optimization
+    //originally came up with brute force and dynamic tabulation myself, copied and learned third option
     int n = nums.size();
     vector<int> output(n);
     output[0] = 1;
